@@ -167,6 +167,14 @@ public:
 	*/
 	void get_imu_vibe_metrics(float vibe[3]);
 
+	/*
+	Returns  following GPS drift  metrics in the following array locations
+	0 : Horizontal position drift rate (m/s)
+	1 : Vertical position drift rate (m/s)
+	2 : Filtered horizontal velocity (m/s)
+	*/
+	void get_gps_drift_metrics(float vibe[3]);
+
 	// return true if the global position estimate is valid
 	bool global_position_is_valid();
 
